@@ -15,3 +15,22 @@ jobs:
     steps:
     - name: Do nothing
       run: sleep 30
+    - name: Workflow Dispatcher
+      # You may pin to the exact commit or the version.
+      # uses: adityakar/workflow-dispatcher@a0f690a2262373956eaee3ef74a01f5afed4ec7c
+      uses: adityakar/workflow-dispatcher@v1.0
+      with:
+        # Owner of the GitHub repo
+        owner: 
+        # Name of the GitHub repo
+        repo: 
+        # Access token (PAT) for the repo
+        token: 
+        # The event type of the repository dispatch
+        event_type: 
+        # Payload for the repository dispatch event
+        client_payload: # optional, default is {}
+        # How long to wait between polls (seconds)
+        wait_time: # optional, default is 10
+        # Maximum amount of time to wait for workflow (seconds)
+        max_time: # optional, default is 600
