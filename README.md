@@ -2,7 +2,7 @@
 
 Github Action for trigger a workflow from another workflow. The action then waits for a response.
 
-**When would you use it?**
+**When would you use it?**  11
 
 When deploying an app you may need to deploy additional services, this Github Action helps with that.
 
